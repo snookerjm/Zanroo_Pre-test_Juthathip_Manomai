@@ -1,0 +1,144 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, sans-serif;
+  background: #f2f4f8;
+  color: #111827;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html, #root {
+  margin: 0;
+  min-height: 100%;
+}
+
+.app-shell {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+header {
+  margin-bottom: 24px;
+}
+
+header h1 {
+  margin: 0 0 8px;
+  font-size: clamp(2rem, 2.5vw, 2.5rem);
+}
+
+header p {
+  margin: 0;
+  color: #4b5563;
+}
+
+.user-table-wrapper {
+  overflow-x: auto;
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #d1d5db;
+  padding: 12px 14px;
+  text-align: left;
+}
+
+.user-table th {
+  background: #f9fafb;
+  color: #111827;
+}
+
+.user-table input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.action-cell {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px 12px;
+  font-weight: 600;
+}
+
+.btn.edit {
+  background: #2563eb;
+  color: white;
+}
+
+.btn.delete {
+  background: #ef4444;
+  color: white;
+}
+
+.btn.save {
+  background: #16a34a;
+  color: white;
+}
+
+.btn.cancel {
+  background: #6b7280;
+  color: white;
+}
+
+.btn.add {
+  background: #0f766e;
+  color: white;
+}
+
+.btn.save.new {
+  background: #16a34a;
+  color: white;
+}
+
+.form-section {
+  margin-top: 24px;
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.input-row {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  margin-bottom: 16px;
+}
+
+label {
+  display: grid;
+  gap: 8px;
+  font-weight: 600;
+  color: #111827;
+}
+
+label input {
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .action-cell {
+    flex-direction: column;
+  }
+}
